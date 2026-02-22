@@ -3,25 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VoidSynth — UI/UX Designer & Fullstack Web Developer</title>
-    <meta name="description" content="I'm VoidSynth — a UI/UX Designer and Fullstack Web Developer with 4+ years building premium digital experiences. Design you can feel. Engineering you can trust." />
-    <meta name="keywords" content="VoidSynth, UI/UX Designer, Fullstack Developer, React, Next.js, TypeScript, Portfolio" />
-    <link rel="canonical" href="https://voidsynth.vercel.app" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>VoidSynth — Design you can feel. Engineering you can trust.</title>
+    <meta name="description" content="4+ years building premium digital products. UI/UX Designer & Fullstack Developer. Explore my portfolios, GitHub, and let's build something together." />
+    <meta name="keywords" content="VoidSynth, UI/UX Designer, Fullstack Developer, React, Next.js, TypeScript, Django, Node.js, Portfolio, Web Developer" />
+    <link rel="canonical" href="https://voidsynth-connect.vercel.app" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" type="image/x-icon" href="/favicon.ico" />
 
-    <!-- Open Graph -->
+    <!-- Open Graph / Facebook / WhatsApp -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="VoidSynth — UI/UX Designer & Fullstack Web Developer" />
-    <meta property="og:description" content="Design you can feel. Engineering you can trust. 4+ years building premium digital products." />
-    <meta property="og:image" content="/og.png" />
-    <meta property="og:url" content="https://voidsynth.vercel.app" />
+    <meta property="og:title" content="VoidSynth — Design you can feel. Engineering you can trust." />
+    <meta property="og:description" content="4+ years building premium digital products. UI/UX Designer & Fullstack Developer. Explore my portfolios, GitHub, and let's build something together." />
+    <meta property="og:image" content="https://voidsynth-connect.vercel.app/link-preview.jpg" />
+    <meta property="og:image:secure_url" content="https://voidsynth-connect.vercel.app/link-preview.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="VoidSynth — UI/UX Designer & Fullstack Web Developer" />
+    <meta property="og:url" content="https://voidsynth-connect.vercel.app" />
     <meta property="og:site_name" content="VoidSynth" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Additional WhatsApp specific -->
+    <meta property="og:image:url" content="https://voidsynth-connect.vercel.app/link-preview.jpg" />
 
-    <!-- Twitter -->
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="VoidSynth — UI/UX Designer & Fullstack Web Developer" />
-    <meta name="twitter:description" content="Design you can feel. Engineering you can trust. 4+ years building premium digital products." />
-    <meta name="twitter:image" content="/og.png" />
+    <meta name="twitter:site" content="@voidsynth" />
+    <meta name="twitter:creator" content="@voidsynth" />
+    <meta name="twitter:title" content="VoidSynth — Design you can feel. Engineering you can trust." />
+    <meta name="twitter:description" content="4+ years building premium digital products. UI/UX Designer & Fullstack Developer. Explore my portfolios, GitHub, and let's build something together." />
+    <meta name="twitter:image" content="https://voidsynth-connect.vercel.app/link-preview.jpg" />
+    <meta name="twitter:image:alt" content="VoidSynth — UI/UX Designer & Fullstack Web Developer" />
+
+    <!-- Additional Meta Tags -->
+    <meta name="author" content="VoidSynth" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
     <!-- JSON-LD -->
     <script type="application/ld+json">
@@ -30,17 +49,27 @@
       "@type": "Person",
       "name": "VoidSynth",
       "jobTitle": "UI/UX Designer & Fullstack Web Developer",
-      "email": "umarboluwatife01@gmail.com",
-      "url": "https://voidsynth.vercel.app",
+      "description": "Design you can feel. Engineering you can trust. 4+ years building premium digital products.",
+      "email": "voidsynth6@gmail.com",
+      "url": "https://voidsynth-connect.vercel.app",
+      "image": "https://voidsynth-connect.vercel.app/link-preview.jpg",
       "sameAs": [
         "https://github.com/void-synth",
         "https://voidsynth-the-first.vercel.app",
         "https://voidsynth-the-second.vercel.app"
-      ]
+      ],
+      "knowsAbout": ["UI/UX Design", "Fullstack Development", "React", "Next.js", "TypeScript", "Django", "Node.js"]
     }
     </script>
   </head>
   <body>
+    <script>
+      // Prevent flash of wrong theme
+      (function() {
+        const theme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.classList.add(theme);
+      })();
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

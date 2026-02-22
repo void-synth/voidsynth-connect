@@ -24,7 +24,7 @@ const links = [
   },
 ];
 
-const EMAIL = "umarboluwatife01@gmail.com";
+const EMAIL = "voidsynth6@gmail.com";
 
 const LinkCards = () => {
   const [copied, setCopied] = useState(false);
@@ -43,7 +43,7 @@ const LinkCards = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="mb-2 text-center text-xs font-semibold uppercase tracking-widest text-muted-foreground"
+          className="mb-2 text-center text-xs font-semibold uppercase tracking-widest text-foreground/70"
         >
           Quick Links
         </motion.h3>
@@ -58,16 +58,16 @@ const LinkCards = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.08, duration: 0.4 }}
-            className="group flex items-center gap-4 rounded-lg border border-border bg-card p-4 transition-all hover:bg-surface-hover glow-border hover:glow-border-hover"
+            className="group flex min-h-[72px] items-center gap-4 rounded-lg border border-border bg-card/80 backdrop-blur-sm p-4 transition-all hover:bg-card/90 hover:backdrop-blur-md active:scale-[0.98] glow-border hover:glow-border-hover focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background"
           >
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-secondary text-primary">
-              <link.icon className="h-5 w-5" />
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-secondary text-primary sm:h-10 sm:w-10">
+              <link.icon className="h-6 w-6 sm:h-5 sm:w-5" />
             </div>
             <div className="flex-1 min-w-0">
-              <p className="text-sm font-semibold text-foreground">{link.title}</p>
-              <p className="text-xs text-muted-foreground line-clamp-1">{link.description}</p>
+              <p className="text-sm font-semibold text-foreground sm:text-base">{link.title}</p>
+              <p className="text-xs text-muted-foreground sm:text-sm line-clamp-2 sm:line-clamp-1">{link.description}</p>
             </div>
-            <ExternalLink className="h-4 w-4 shrink-0 text-muted-foreground transition-colors group-hover:text-primary" />
+            <ExternalLink className="h-5 w-5 shrink-0 text-muted-foreground transition-colors group-hover:text-primary sm:h-4 sm:w-4" />
           </motion.a>
         ))}
 
@@ -77,21 +77,21 @@ const LinkCards = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.24, duration: 0.4 }}
-          className="flex items-center gap-4 rounded-lg border border-border bg-card p-4"
+          className="flex min-h-[72px] items-center gap-4 rounded-lg border border-border bg-card/80 backdrop-blur-sm p-4 sm:min-h-0"
         >
-          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-secondary text-primary">
-            <Mail className="h-5 w-5" />
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-secondary text-primary sm:h-10 sm:w-10">
+            <Mail className="h-6 w-6 sm:h-5 sm:w-5" />
           </div>
           <div className="flex-1 min-w-0">
-            <p className="text-sm font-semibold text-foreground">Contact</p>
-            <p className="text-xs text-muted-foreground truncate">{EMAIL}</p>
+            <p className="text-sm font-semibold text-foreground sm:text-base">Contact</p>
+            <p className="text-xs text-muted-foreground truncate sm:text-sm">{EMAIL}</p>
           </div>
           <button
             onClick={copyEmail}
-            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md border border-border bg-secondary text-muted-foreground transition-all hover:text-primary hover:bg-surface-hover active:scale-95"
+            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md border border-border bg-secondary text-muted-foreground transition-all hover:text-primary hover:bg-surface-hover active:scale-95 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background sm:h-9 sm:w-9"
             aria-label="Copy email"
           >
-            {copied ? <Check className="h-4 w-4 text-primary" /> : <Copy className="h-4 w-4" />}
+            {copied ? <Check className="h-5 w-5 text-primary sm:h-4 sm:w-4" /> : <Copy className="h-5 w-5 sm:h-4 sm:w-4" />}
           </button>
         </motion.div>
 

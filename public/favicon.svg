@@ -1,0 +1,15 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Favicon version -->
+  <defs>
+    <linearGradient id="favGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2DD4BF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#14B8A6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- V -->
+  <path d="M4 6 L4 14 L8 18 L8 26 L12 26 L12 18 L8 14 L8 6 Z" fill="url(#favGradient)"/>
+  
+  <!-- S -->
+  <path d="M16 7 C16 5 18 5 20 5 C22 5 24 5 24 7 L24 11 C24 13 22 13 20 13 C18 13 16 13 16 15 L16 19 C16 21 18 21 20 21 C22 21 24 21 24 23 L24 25 C24 27 22 27 20 27 C18 27 16 27 16 25 Z" fill="url(#favGradient)"/>
+</svg>

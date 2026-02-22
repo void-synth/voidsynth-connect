@@ -44,6 +44,41 @@
     --font-display: 'Space Grotesk', sans-serif;
     --font-body: 'Inter', sans-serif;
   }
+
+  .light {
+    --background: 0 0% 98%;
+    --foreground: 240 10% 3%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3%;
+
+    --primary: 175 80% 45%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 5% 96%;
+    --secondary-foreground: 240 10% 8%;
+
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 4% 35%;
+
+    --accent: 175 60% 35%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 240 6% 88%;
+    --input: 240 6% 88%;
+    --ring: 175 80% 45%;
+
+    /* Custom tokens for light theme - improved contrast */
+    --glow: 175 80% 45%;
+    --surface: 0 0% 96%;
+    --surface-hover: 0 0% 92%;
+  }
 }
 
 @layer base {
@@ -78,5 +113,14 @@
 
   .glow-border-hover {
     box-shadow: 0 0 0 1px hsl(var(--primary) / 0.5), 0 0 30px -5px hsl(var(--glow) / 0.25);
+  }
+
+  /* Background image blending utilities */
+  .bg-blend-overlay {
+    mix-blend-mode: overlay;
+  }
+
+  .bg-blend-soft-light {
+    mix-blend-mode: soft-light;
   }
 }

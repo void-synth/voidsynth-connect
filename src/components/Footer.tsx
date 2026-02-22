@@ -1,7 +1,9 @@
 const Footer = () => {
   return (
-    <footer className="border-t border-border px-6 py-10 text-center">
-      <div className="mx-auto max-w-xl space-y-4">
+    <footer className="relative border-t border-border px-6 py-10 text-center">
+      {/* Subtle background blend */}
+      <div className="absolute inset-0 bg-background/50 backdrop-blur-[1px] pointer-events-none" />
+      <div className="relative mx-auto max-w-xl space-y-4">
         <p className="text-sm text-muted-foreground">
           Built different. Let's build something together.
         </p>

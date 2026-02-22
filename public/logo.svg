@@ -1,0 +1,22 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Modern VoidSynth Logo - V and S combined -->
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2DD4BF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#14B8A6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- V Shape - Modern geometric -->
+  <path d="M15 25 L15 55 L30 70 L30 95 L50 95 L50 70 L35 55 L35 25 Z" fill="url(#logoGradient)" filter="url(#glow)"/>
+  
+  <!-- S Shape - Smooth curved design -->
+  <path d="M65 28 C65 20 72 20 80 20 C88 20 95 20 95 28 L95 38 C95 46 88 46 80 46 C72 46 65 46 65 54 L65 64 C65 72 72 72 80 72 C88 72 95 72 95 80 L95 92 C95 100 88 100 80 100 C72 100 65 100 65 92 Z" fill="url(#logoGradient)" filter="url(#glow)"/>
+</svg>
