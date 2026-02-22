@@ -44,13 +44,20 @@ const Hero = () => {
           </motion.div>
         </div>
 
-        <div className="space-y-2 sm:space-y-3">
+        <div className="space-y-3 sm:space-y-4">
           <h1 className="text-4xl font-bold tracking-tight font-display text-foreground sm:text-5xl md:text-6xl drop-shadow-md">
             VoidSynth
           </h1>
           <p className="text-base font-medium text-foreground/90 sm:text-lg drop-shadow-sm">
             UI/UX Designer & Fullstack Web Developer
           </p>
+          {/* Social Proof Badge */}
+          <div className="flex items-center justify-center gap-2 pt-2">
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium text-primary backdrop-blur-sm">
+              <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
+              4+ years shipping real products
+            </span>
+          </div>
         </div>
 
         <motion.div
@@ -59,33 +66,33 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="space-y-5"
         >
-          <h2 className="text-2xl font-bold font-display text-foreground sm:text-3xl leading-tight drop-shadow-sm">
-            Design you can feel.<br className="hidden sm:block" /> Engineering you can trust.
+          <h2 className="text-3xl font-bold font-display text-foreground sm:text-4xl md:text-5xl leading-tight drop-shadow-sm">
+            I don't just build websites.<br className="hidden sm:block" /> I build experiences people feel.
           </h2>
           <div className="space-y-3 text-sm leading-relaxed text-foreground/90 sm:text-base sm:leading-relaxed drop-shadow-sm">
             <p>
-              Four years deep in the trenches, and I've learned one thing: <strong className="text-foreground">great products aren't just pretty — they work.</strong> I blend UI/UX thinking with fullstack delivery so your idea becomes a real, shippable experience.
+              <strong className="text-foreground">UI/UX + Fullstack. Built for impact.</strong> Four years deep, and I've learned one thing: great products aren't just pretty — they work. I blend design thinking with fullstack delivery so your idea becomes a real, shippable experience that people actually want to use.
             </p>
             <p>
-              Dive into my{" "}
+              This is where it gets interesting. My{" "}
               <a
                 href="https://voidsynth-the-first.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-semibold text-primary underline decoration-primary/50 underline-offset-3 transition-all hover:decoration-primary hover:text-primary/90 hover:underline-offset-4 hover:bg-primary/10 hover:px-1 hover:-mx-1 hover:rounded"
               >
-                first portfolio
+                official portfolio
               </a>{" "}
-              for the main showcase, explore my{" "}
+              shows the polished work. My{" "}
               <a
                 href="https://voidsynth-the-second.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-semibold text-primary underline decoration-primary/50 underline-offset-3 transition-all hover:decoration-primary hover:text-primary/90 hover:underline-offset-4 hover:bg-primary/10 hover:px-1 hover:-mx-1 hover:rounded"
               >
-                second portfolio
+                experimental portfolio
               </a>{" "}
-              for deeper case studies and experiments, and check out my{" "}
+              shows the dangerous stuff. And my{" "}
               <a
                 href="https://github.com/void-synth"
                 target="_blank"
@@ -94,7 +101,7 @@ const Hero = () => {
               >
                 GitHub
               </a>{" "}
-              to see the code behind the magic.
+              shows the receipts.
             </p>
           </div>
         </motion.div>

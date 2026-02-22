@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { Clock, Palette, Code2, Zap } from "lucide-react";
 
 const proofs = [
-  { icon: Clock, label: "4+ Years", sub: "Experience" },
-  { icon: Palette, label: "Product Thinking", sub: "UI/UX" },
-  { icon: Code2, label: "Production Builds", sub: "Fullstack" },
-  { icon: Zap, label: "Clean Code", sub: "Fast Delivery" },
+  { icon: Clock, label: "4+ Years", sub: "Shipping Real Products" },
+  { icon: Palette, label: "Product Thinking", sub: "UI/UX + Design" },
+  { icon: Code2, label: "Production Ready", sub: "Fullstack Delivery" },
+  { icon: Zap, label: "Built for Impact", sub: "Fast & Reliable" },
 ];
 
 const ProofBar = () => {
